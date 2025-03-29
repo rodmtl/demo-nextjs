@@ -24,21 +24,21 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-[#EBF2FA] backdrop-blur supports-[backdrop-filter]:bg-[#EBF2FA]/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/fr" className="flex items-center space-x-2">
             <Terminal className="h-6 w-6" />
             <span className="font-bold">DevOpsArchitect</span>
           </Link>
           <nav className="hidden md:flex gap-6">
-            <Link href="#about" className="text-sm font-medium hover:text-primary">
-              About
+            <Link href="/fr#about" className="text-sm font-medium hover:text-primary">
+              À propos
             </Link>
-            <Link href="#expertise" className="text-sm font-medium hover:text-primary">
+            <Link href="/fr#expertise" className="text-sm font-medium hover:text-primary">
               Expertise
             </Link>
-            <Link href="#projects" className="text-sm font-medium hover:text-primary">
-              Projects
+            <Link href="/fr#projects" className="text-sm font-medium hover:text-primary">
+              Projets
             </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-primary">
+            <Link href="/fr#contact" className="text-sm font-medium hover:text-primary">
               Contact
             </Link>
           </nav>
@@ -47,28 +47,28 @@ export default function Home() {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="flex items-center gap-1">
                   <Globe className="h-4 w-4" />
-                  <span>EN</span>
+                  <span>FR</span>
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
+                <DropdownMenuItem>
+                  <Link href="/" className="flex w-full pl-6">
+                    English
+                  </Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center gap-2">
                   <Check className="h-4 w-4" />
-                  <span>English</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href="/fr" className="flex w-full pl-6">
-                    Français
-                  </Link>
+                  <span>Français</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Button asChild size="sm" className="hidden md:flex">
-              <Link href="#contact">Get in Touch</Link>
+              <Link href="/fr#contact">Me Contacter</Link>
             </Button>
           </div>
           <Button variant="outline" size="icon" className="md:hidden">
             <Terminal className="h-4 w-4" />
-            <span className="sr-only">Toggle menu</span>
+            <span className="sr-only">Menu</span>
           </Button>
         </div>
       </header>
@@ -77,24 +77,24 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-16">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                Software Architect & DevOps Specialist
+                Architecte Logiciel & Spécialiste DevOps
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Building scalable, resilient infrastructure and streamlining development workflows for modern
-                applications.
+                Construction d'infrastructures évolutives et résilientes et rationalisation des flux de travail de
+                développement pour les applications modernes.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild>
-                  <Link href="#projects">
-                    View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link href="/fr#projects">
+                    Voir Mes Travaux <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link href="#contact">Contact Me</Link>
+                  <Link href="/fr#contact">Me Contacter</Link>
                 </Button>
                 <Button variant="secondary" asChild>
-                  <Link href="/cv.pdf" download>
-                    Download CV <ArrowRight className="ml-2 h-4 w-4" />
+                  <Link href="/cv-fr.pdf" download>
+                    Télécharger CV <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="mx-auto aspect-square overflow-hidden rounded-full border-8 border-muted lg:order-last">
               <Image
                 src="/placeholder.svg?height=400&width=400"
-                alt="Profile"
+                alt="Profil"
                 width={400}
                 height={400}
                 className="object-cover"
@@ -114,47 +114,48 @@ export default function Home() {
 
         <section id="about" className="py-16 sm:py-24">
           <div className="container">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">About Me</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">À Propos de Moi</h2>
             <div className="grid gap-8 lg:grid-cols-2">
               <div className="space-y-4">
                 <p className="text-lg">
-                  I'm a Software Architect with over 10 years of experience specializing in DevOps implementation and
-                  cloud infrastructure. I help organizations build robust CI/CD pipelines, implement infrastructure as
-                  code, and optimize their development workflows.
+                  Je suis un Architecte Logiciel avec plus de 10 ans d'expérience spécialisé dans l'implémentation
+                  DevOps et l'infrastructure cloud. J'aide les organisations à construire des pipelines CI/CD robustes,
+                  à implémenter l'infrastructure en tant que code et à optimiser leurs flux de travail de développement.
                 </p>
                 <p className="text-lg">
-                  My approach combines technical expertise with a deep understanding of business needs, ensuring that
-                  the solutions I design not only work flawlessly but also align with organizational goals and enhance
-                  team productivity.
+                  Mon approche combine expertise technique et compréhension approfondie des besoins métier, garantissant
+                  que les solutions que je conçois fonctionnent parfaitement tout en s'alignant sur les objectifs
+                  organisationnels et en améliorant la productivité de l'équipe.
                 </p>
                 <p className="text-lg">
-                  When I'm not architecting systems, you can find me contributing to open-source projects, speaking at
-                  tech conferences, or mentoring the next generation of DevOps engineers.
+                  Quand je n'architecte pas des systèmes, vous pouvez me trouver en train de contribuer à des projets
+                  open-source, de parler lors de conférences technologiques ou de mentorer la prochaine génération
+                  d'ingénieurs DevOps.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-bold">Professional Background</h3>
+                <h3 className="text-xl font-bold">Parcours Professionnel</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <ArrowRight className="mr-2 h-5 w-5 text-[#679436] shrink-0 mt-0.5" />
-                    <span>Lead DevOps Architect at Enterprise Solutions Inc. (2020-Present)</span>
+                    <span>Architecte DevOps Principal chez Enterprise Solutions Inc. (2020-Présent)</span>
                   </li>
                   <li className="flex items-start">
                     <ArrowRight className="mr-2 h-5 w-5 text-[#679436] shrink-0 mt-0.5" />
-                    <span>Senior Cloud Engineer at Tech Innovations Ltd. (2017-2020)</span>
+                    <span>Ingénieur Cloud Senior chez Tech Innovations Ltd. (2017-2020)</span>
                   </li>
                   <li className="flex items-start">
                     <ArrowRight className="mr-2 h-5 w-5 text-[#679436] shrink-0 mt-0.5" />
-                    <span>DevOps Consultant at Global Systems (2014-2017)</span>
+                    <span>Consultant DevOps chez Global Systems (2014-2017)</span>
                   </li>
                   <li className="flex items-start">
                     <ArrowRight className="mr-2 h-5 w-5 text-[#679436] shrink-0 mt-0.5" />
-                    <span>Software Developer at StartUp Ventures (2011-2014)</span>
+                    <span>Développeur Logiciel chez StartUp Ventures (2011-2014)</span>
                   </li>
                 </ul>
-                <h3 className="text-xl font-bold mt-6">Education</h3>
-                <p>MSc in Computer Science, Tech University (2011)</p>
-                <p>BSc in Software Engineering, Engineering College (2009)</p>
+                <h3 className="text-xl font-bold mt-6">Formation</h3>
+                <p>Master en Informatique, Université Tech (2011)</p>
+                <p>Licence en Génie Logiciel, École d'Ingénierie (2009)</p>
               </div>
             </div>
           </div>
@@ -163,15 +164,15 @@ export default function Home() {
         <section id="expertise" className="py-16 sm:py-24">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              My Expertise
+              Mon Expertise
             </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               <Card>
                 <CardHeader>
                   <Cloud className="h-10 w-10 text-[#679436] mb-2" />
-                  <CardTitle>Cloud Infrastructure</CardTitle>
+                  <CardTitle>Infrastructure Cloud</CardTitle>
                   <CardDescription>
-                    Designing and implementing scalable cloud solutions on AWS, Azure, and GCP
+                    Conception et implémentation de solutions cloud évolutives sur AWS, Azure et GCP
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -188,9 +189,9 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <GitBranch className="h-10 w-10 text-[#679436] mb-2" />
-                  <CardTitle>CI/CD Pipelines</CardTitle>
+                  <CardTitle>Pipelines CI/CD</CardTitle>
                   <CardDescription>
-                    Building automated workflows for continuous integration and deployment
+                    Construction de flux de travail automatisés pour l'intégration et le déploiement continus
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -207,8 +208,10 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <Server className="h-10 w-10 text-[#679436] mb-2" />
-                  <CardTitle>Container Orchestration</CardTitle>
-                  <CardDescription>Managing containerized applications at scale with Kubernetes</CardDescription>
+                  <CardTitle>Orchestration de Conteneurs</CardTitle>
+                  <CardDescription>
+                    Gestion d'applications conteneurisées à grande échelle avec Kubernetes
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -225,7 +228,7 @@ export default function Home() {
                 <CardHeader>
                   <Code className="h-10 w-10 text-[#679436] mb-2" />
                   <CardTitle>Infrastructure as Code</CardTitle>
-                  <CardDescription>Automating infrastructure provisioning with code</CardDescription>
+                  <CardDescription>Automatisation du provisionnement d'infrastructure avec du code</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -241,8 +244,8 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <Database className="h-10 w-10 text-[#679436] mb-2" />
-                  <CardTitle>Database Management</CardTitle>
-                  <CardDescription>Designing and optimizing database architectures</CardDescription>
+                  <CardTitle>Gestion de Bases de Données</CardTitle>
+                  <CardDescription>Conception et optimisation d'architectures de bases de données</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -258,8 +261,10 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <Terminal className="h-10 w-10 text-[#679436] mb-2" />
-                  <CardTitle>Scripting & Automation</CardTitle>
-                  <CardDescription>Creating scripts and tools to automate repetitive tasks</CardDescription>
+                  <CardTitle>Scripting & Automatisation</CardTitle>
+                  <CardDescription>
+                    Création de scripts et d'outils pour automatiser les tâches répétitives
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -278,20 +283,20 @@ export default function Home() {
         <section id="projects" className="py-16 sm:py-24">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              Featured Projects
+              Projets Phares
             </h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>Enterprise CI/CD Pipeline</CardTitle>
+                  <CardTitle>Pipeline CI/CD d'Entreprise</CardTitle>
                   <CardDescription>
-                    Designed and implemented a comprehensive CI/CD pipeline for a Fortune 500 company
+                    Conception et implémentation d'un pipeline CI/CD complet pour une entreprise du Fortune 500
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-muted-foreground">
-                    Reduced deployment time by 80% and eliminated manual errors by automating the entire software
-                    delivery process from code commit to production deployment.
+                    Réduction du temps de déploiement de 80% et élimination des erreurs manuelles en automatisant
+                    l'ensemble du processus de livraison logicielle, du commit de code au déploiement en production.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -305,13 +310,15 @@ export default function Home() {
 
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>Cloud Migration Strategy</CardTitle>
-                  <CardDescription>Led the migration of legacy systems to a cloud-native architecture</CardDescription>
+                  <CardTitle>Stratégie de Migration Cloud</CardTitle>
+                  <CardDescription>
+                    Direction de la migration de systèmes legacy vers une architecture cloud-native
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-muted-foreground">
-                    Architected and executed a phased migration plan that moved 200+ applications to AWS, resulting in
-                    40% cost reduction and improved system reliability.
+                    Architecture et exécution d'un plan de migration par phases qui a déplacé plus de 200 applications
+                    vers AWS, entraînant une réduction des coûts de 40% et une amélioration de la fiabilité du système.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -325,15 +332,15 @@ export default function Home() {
 
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>DevSecOps Implementation</CardTitle>
+                  <CardTitle>Implémentation DevSecOps</CardTitle>
                   <CardDescription>
-                    Integrated security into the DevOps pipeline for a financial institution
+                    Intégration de la sécurité dans le pipeline DevOps pour une institution financière
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-muted-foreground">
-                    Implemented automated security scanning and compliance checks throughout the development lifecycle,
-                    reducing security vulnerabilities by 75%.
+                    Implémentation de scans de sécurité automatisés et de vérifications de conformité tout au long du
+                    cycle de développement, réduisant les vulnérabilités de sécurité de 75%.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -347,13 +354,16 @@ export default function Home() {
 
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>Kubernetes Platform</CardTitle>
-                  <CardDescription>Built a self-service Kubernetes platform for development teams</CardDescription>
+                  <CardTitle>Plateforme Kubernetes</CardTitle>
+                  <CardDescription>
+                    Construction d'une plateforme Kubernetes en libre-service pour les équipes de développement
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-muted-foreground">
-                    Created a custom platform that allowed developers to deploy applications to Kubernetes without deep
-                    infrastructure knowledge, increasing deployment frequency by 300%.
+                    Création d'une plateforme personnalisée permettant aux développeurs de déployer des applications sur
+                    Kubernetes sans connaissance approfondie de l'infrastructure, augmentant la fréquence de déploiement
+                    de 300%.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -367,15 +377,15 @@ export default function Home() {
 
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>Monitoring & Observability</CardTitle>
+                  <CardTitle>Monitoring & Observabilité</CardTitle>
                   <CardDescription>
-                    Implemented comprehensive monitoring for a global e-commerce platform
+                    Implémentation d'un monitoring complet pour une plateforme e-commerce mondiale
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-muted-foreground">
-                    Designed and deployed a monitoring solution that provided real-time insights into system
-                    performance, reducing MTTR by 60% and improving customer experience.
+                    Conception et déploiement d'une solution de monitoring fournissant des insights en temps réel sur
+                    les performances du système, réduisant le MTTR de 60% et améliorant l'expérience client.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -389,13 +399,15 @@ export default function Home() {
 
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>Infrastructure Automation</CardTitle>
-                  <CardDescription>Automated infrastructure provisioning for a SaaS provider</CardDescription>
+                  <CardTitle>Automatisation d'Infrastructure</CardTitle>
+                  <CardDescription>
+                    Automatisation du provisionnement d'infrastructure pour un fournisseur SaaS
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">
                   <p className="text-muted-foreground">
-                    Implemented infrastructure as code practices that enabled the company to provision complete
-                    environments in minutes instead of weeks, accelerating time to market.
+                    Implémentation de pratiques d'infrastructure as code qui ont permis à l'entreprise de provisionner
+                    des environnements complets en minutes au lieu de semaines, accélérant la mise sur le marché.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -413,10 +425,10 @@ export default function Home() {
         <section id="contact" className="py-16 sm:py-24">
           <div className="container">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Get in Touch</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Me Contacter</h2>
               <p className="text-muted-foreground mb-8">
-                Interested in working together? I'm always open to discussing new projects, opportunities, or
-                partnerships.
+                Intéressé par une collaboration? Je suis toujours ouvert à discuter de nouveaux projets, opportunités ou
+                partenariats.
               </p>
               <Card className="p-6">
                 <div className="flex flex-col items-center gap-6">
@@ -446,13 +458,13 @@ export default function Home() {
                     <Button size="lg" variant="outline" asChild>
                       <Link href="mailto:contact@example.com" className="flex items-center gap-2">
                         <Mail className="h-5 w-5" />
-                        <span>Email Me</span>
+                        <span>Email</span>
                       </Link>
                     </Button>
                   </div>
                   <Button size="lg" className="mt-4" asChild>
-                    <Link href="/cv.pdf" download className="flex items-center gap-2">
-                      Download CV <ArrowRight className="ml-2 h-4 w-4" />
+                    <Link href="/cv-fr.pdf" download className="flex items-center gap-2">
+                      Télécharger CV <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
@@ -466,15 +478,15 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <Terminal className="h-5 w-5" />
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} DevOpsArchitect. All rights reserved.
+              © {new Date().getFullYear()} DevOpsArchitect. Tous droits réservés.
             </p>
           </div>
           <div className="flex gap-4">
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy Policy
+              Politique de Confidentialité
             </Link>
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Terms of Service
+              Conditions d'Utilisation
             </Link>
           </div>
         </div>

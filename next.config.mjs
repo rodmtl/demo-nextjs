@@ -8,6 +8,8 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: process.env.PAGES_BASE_PATH || '',
+  assetPrefix: process.env.PAGES_BASE_PATH ? `${process.env.PAGES_BASE_PATH}/` : '',
   eslint: {
     ignoreDuringBuilds: true,
   },

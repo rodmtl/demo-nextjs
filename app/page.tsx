@@ -117,7 +117,7 @@ export default function Home() {
                   In my latest role as a DevOps Architect, I've been responsible for optimizing infrastructure and deployment processes. I also have strong database development skills, including expertise in MSSQL and Oracle. I'm a self-driven professional focused on delivering high-performance, user-friendly software solutions.
                 </p>
                 <p className="text-lg">
-                  Recently, I teamed up with my neighbors to launch marketing.express, a local business marketing tool that operates on autopilot. A proud father and husband, I relocated to Montreal in 2014.
+                  Recently, I partnered with my neighbors to launch <Link href="https://marketing.express/" target="_blank" className="text-primary hover:underline">marketing.express</Link>, an automated marketing tool for local businesses. A proud father and husband, I moved to Montreal in 2014.
                 </p>
               </div>
               <div className="space-y-4">
@@ -249,7 +249,7 @@ export default function Home() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="flex flex-col">
                 <CardHeader>
-                  <CardTitle>Marketing Express</CardTitle>
+                  <CardTitle><Link href="https://marketing.express/" target="_blank" className="text-primary hover:underline">Marketing Express</Link></CardTitle>
                   <CardDescription>Montreal, Canada</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-1">

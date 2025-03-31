@@ -76,10 +76,10 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-16">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                CTO - DevOps & Software Architect
+                DevOps & Software Architect
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Colombian Systems Engineer with over 12 years of experience in Microsoft .NET technologies, BPM systems, and e-commerce platforms.
+                Colombian Software Engineer with over 12 years of experience in Microsoft .NET technologies, BPM systems, and e-commerce platforms.
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild>
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="grid gap-8 lg:grid-cols-2">
               <div className="space-y-4">
                 <p className="text-lg">
-                  I'm a Colombian Systems Engineer with over 12 years of experience in Microsoft .NET technologies, BPM systems, and e-commerce platforms. My passion for computers and software began early, and recently I have specialized in developing cloud-based web applications on Azure and implementing agile methodologies.
+                  I'm a Colombian Software Engineer with over 12 years of experience in Microsoft .NET technologies, BPM systems, and e-commerce platforms. My passion for computers and software began early, and recently I have specialized in developing cloud-based web applications on Azure and implementing agile methodologies.
                 </p>
                 <p className="text-lg">
                   In my latest role as a DevOps Architect, I've been responsible for optimizing infrastructure and deployment processes. I also have strong database development skills, including expertise in MSSQL and Oracle. I'm a self-driven professional focused on delivering high-performance, user-friendly software solutions.

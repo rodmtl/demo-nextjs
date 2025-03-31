@@ -76,7 +76,7 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-16">
             <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                DSI - Architecte DevOps & Logiciel
+                Architecte DevOps & Logiciel
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 Informaticien colombien avec plus de 12 ans d'expérience dans les technologies Microsoft .NET, les systèmes BPM et les plateformes e-commerce.

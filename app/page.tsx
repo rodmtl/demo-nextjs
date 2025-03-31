@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div className="mx-auto aspect-square overflow-hidden rounded-full border-8 border-muted lg:order-last">
               <Image
-                src="/profile.jpg"
+                src="/images/profile.jpg"
                 alt="Rodrigo Riveros-Vanegas"
                 width={400}
                 height={400}
